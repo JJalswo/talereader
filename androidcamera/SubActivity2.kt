@@ -41,7 +41,7 @@ class SubActivity2 : AppCompatActivity() {
             .setOnClickListener {
                 Toast.makeText(this, "Linked clicked" , Toast.LENGTH_SHORT).show()
                 //examples
-                var link :String = "https://en.dict.naver.com/#/search?query=word"
+                var link :String = "https://en.dict.naver.com/#/search?query="
                 var intent = Intent(Intent.ACTION_VIEW, Uri.parse(link.plus(word)))
                 startActivity(intent)
             }
